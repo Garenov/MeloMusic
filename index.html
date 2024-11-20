@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloMusic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Left sidebar -->
+    <div class="leftSidebar">
+        <fieldset><legend><h1>MeloMusic</h1></legend></fieldset>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="topCharts.html">Top Charts</a></li>
+                <li><a href="recomedations.html">Recomendations</a></li>
+            </ul>
+        </nav>
+
+        
+
+        <!-- Playlists -->
+        <h2 class="playlistName">Playlists</h2>
+            <div class="playlistContainer">
+                <div class="playlist">
+                    <h3>Name1</h3>
+                    <div class="playForPlaylist">
+                        <button id="play-playlist-button">
+                            <img src="/image/play.png" alt="Play button" class="playImg">
+                        </button>
+                    </div>
+                    <h4>Song count</h4>
+                </div>
+                <div class="playlist">
+                    <h3>Name2</h3>
+                    <div class="playForPlaylist">
+                        <button id="play-playlist-button">
+                            <img src="/image/play.png" alt="Play button" class="playImg">
+                        </button>
+                    </div>
+                    <h4>Song count</h4>
+                </div>
+                <div class="playlist">
+                    <h3>Name2</h3>
+                    <div class="playForPlaylist">
+                        <button id="play-playlist-button">
+                            <img src="/image/play.png" alt="Play button" class="playImg">
+                        </button>
+                    </div>
+                    <h4>Song count</h4>
+                </div>
+            </div>
+
+        <!-- Playlists End -->
+         
+    </div>
+
+
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="top-bar">
+            <input type="text" id="search-bar" placeholder="Search for songs...">
+            <button id="search-button">Search</button>
+        </div>    
+
+
+
+        <!-- Song Comparison -->
+        <div class="player-container">
+            
+        
+
+
+            <!-- Rewiev -->
+            <div class="rewievContainer">
+                <div class="rewiev">
+                
+                </div>
+            </div>
+            <!-- End of rewiev -->
+
+
+
+
+            <div class="player" id="player1">
+                <div class="album-cover">
+                    <img src="image/songs/anakondazMama.png" alt="Album Cover 1">
+                    <audio id="audio1" src="music/anacondazMamaYaLublu.mp3"></audio>
+                </div>
+
+
+                <div class="controls">
+
+                    <button class="play-pause" data-audio="audio1">
+                        <img src="image/play.png" alt="Play">
+                    </button>
+                    
+                    <button class="like" data-liked="false">
+                        <img src="image/unliked.png" alt="Like">
+                    </button>
+
+                    <button class="next" data-player="player1">
+                        <img src="image/skip.png" alt="Next">
+                    </button>
+
+                    <button class="playlistAddButton" id="playlistAddButton">
+                        <img src="image/playlistAddButton.png" alt="Playlist add button">
+                    </button>
+
+                    <div class="volume">
+                        <img src="image/volume.svg" alt="Volume">
+                    </div>
+                    
+                    <input type="range" class="volume" data-audio="audio1" min="0" max="1" step="0.01" value="0.5">
+                </div>
+
+
+                <div class="song-title">Anacondaz - Мама я люблю</div>
+                <div class="timer">00:00 / 00:00</div>
+
+            </div>
+
+
+
+            <div class="vs">
+                <img src="image/against.png" alt="Versus">
+            </div>
+
+
+
+            <div class="player" id="player2">
+                <div class="album-cover">
+                    <img src="image/songs/bredishMoshi.png" alt="Album Cover 2">
+                    <audio id="audio2" src="music/bredishMoshi.mp3"></audio>
+                </div>
+
+                <div class="controls">
+
+                    <button class="play-pause" data-audio="audio2">
+                        <img src="image/play.png" alt="Play">
+                    </button>
+
+                    <button class="like" data-liked="false">
+                        <img src="image/unliked.png" alt="Like">
+                    </button>
+
+                    <button class="next" data-player="player2">
+                        <img src="image/skip.png" alt="Next">
+                    </button>
+
+                    <button class="playlistAddButton" id="playlistAddButton">
+                        <img src="image/playlistAddButton.png" alt="Playlist add button">
+                    </button>
+
+                    <div class="volume">
+                        <img src="image/volume.svg" alt="Volume">
+                    </div>
+
+                    <input type="range" class="volume" data-audio="audio2" min="0" max="1" step="0.01" value="0.5">
+                </div>
+
+                <div class="song-title">Бредишь - Мощи</div>
+                <div class="timer">00:00 / 00:00</div>
+            </div>
+        </div>
+        <!-- Song Comparison End -->
+
+
+
+
+        <!-- Song Comments -->
+        <div class="commentsContainer">
+            <div class="comments">
+                <div class="comment">
+                    <h2>Comments</h2>
+                    <div class="commentText">
+                        I absolutely adore this song! It's so lively and uplifting. Thank you for sharing it with us!
+                    </div>
+                    <div class="commentDate">
+                        2021-07-12
+                    </div>
+                    <img src="image/user1.jpg" alt="User 1">
+                    <div class="commentText">
+                        This is a great choice! I've been listening to it for a while now. The melody is so catchy and the lyrics are so upbeat. Thank you!
+                    </div>
+                    <div class="commentDate">
+                        2022-11-02
+                    </div>  
+                    <img src="image/user2.jpg" alt="User 2">
+                </div>
+            </div>
+
+
+
+
+
+            <div class="vs vs-transparent">
+                <img src="image/against.png" alt="Versus">
+            </div>
+
+
+
+
+            <div class="rightComments">
+                <div class="rightComment">
+                    <h2>Comments</h2>
+                    <div class="rightCommentText">
+                        I absolutely adore this song! It's so lively and uplifting. Thank you for sharing it with us!
+                    </div>
+                    <div class="rightCommentDate">
+                        2021-07-12
+                    </div>
+                    <img src="image/user1.jpg" alt="User 1">
+                    <div class="rightCommentText">
+                        This is a great choice! I've been listening to it for a while now. The melody is so catchy and the lyrics are so upbeat. Thank you!
+                    </div>
+                    <div class="rightCommentDate">
+                        2022-11-02
+                    </div>  
+                    <img src="image/user2.jpg" alt="User 2">
+                </div>
+            </div>
+        </div>
+        <!-- Song Comments End -->
+
+    </div>
+
+
+
+    <div id="playlistModal" class="modal">
+        <div class="modalContent">
+            <span class="close-button">&times;</span>
+            <h2>Управление плейлистами</h2>
+            <input type="text" id="new-playlist-name" placeholder="Название нового плейлиста" />
+            <button id="create-playlist-button">Создать плейлист</button>
+            <br><br>
+            <label for="select-playlist">Выберите плейлист для добавления:</label>
+            <select id="select-playlist">
+                <option value="" disabled selected>Выберите плейлист</option>
+            </select>
+            <br><br>
+            <button id="add-song-to-playlist-button">Добавить песню в плейлист</button>
+        </div>
+    </div>
+       
+    <script src="/javaScript/player.js"></script>
+    <script src="/javaScript/playlists.js"></script>
+    <script src="/javaScript/playlistAddButton.js"></script>
+    <script src="/javaScript/skipLike.js"></script>
+    <!--<script src="javaScript/script.js"></script>!-->
+    
+</body>
+</html>
